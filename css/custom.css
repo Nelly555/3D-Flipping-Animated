@@ -1,0 +1,84 @@
+.body{
+background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09204f 74%);
+height: 100vh;
+color:antiquewhite;
+padding: 50px;font-family: monospace;
+line-height: 1.5;
+overflow: hidden;
+}
+.container{
+    max-width: 60em;
+    margin: 0 auto;
+}
+a{
+    color:#fc0;
+}
+h1{
+    color:burlywood;
+    text-align: center;
+}
+.block-menu{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    margin-top:50px;
+}
+.block-menu li{
+    display: inline-block;
+}
+.block-menu li a{
+    color:whitesmoke;
+    display: block;
+    text-decoration: none;
+    font-family:monospace;
+    text-transform: uppercase; 
+    overflow: visible;
+    line-height: 15px;
+    font-size: 24px;
+    padding: 8px 10px;
+}
+.three-d{
+    perspective: 200px;
+    transition: all 0.7s linear;
+    position: relative;
+    cursor: pointer;
+}
+.three-d:hover .three-d-box,
+.three-d:focus .three-d-box{
+    transform: translateZ(-25px) rotateX(90deg);
+}
+.three-d-box{
+    transition: all 0.3s ease-out;
+    transform: translateZ(-25px);
+    transform-style: preserve-3d;
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 100%;
+}
+.front{
+    transform: rotateX(0deg) translateZ(25px);
+}
+.back{
+    transform: rotateX(-90deg) translateZ(25px);
+    color:#ffe7c4;
+}
+.front, .back{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #861657;
+    background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%);
+    padding: 25px 10px;
+    color:blanchedalmond;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+.back{
+    background:#222;
+}

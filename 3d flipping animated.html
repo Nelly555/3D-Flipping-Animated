@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Starting head-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="siteroot/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3d flipping animated</title> 
+<!--Bootstap4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!--Google fontAwesome-->
+<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="css/custom.css"> 
+<!--Google Font-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body style="background-color:#0a3758;"> 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <h1>3D Flipping Animated</h1>
+            <ul class="block-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Demos</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">content us</a></li>
+                <li><a href="">Location</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script>
+        $('.block-menu').find('a').each(function(){
+            var el =$(this),
+            elText = el.text();
+            el.addClass("three-d");
+            el.append('<span class="three-d-box"><span class="front">'+elText+'</span><span class="back">'+elText+'</span></span>')
+        });
+        
+    </script>
+</body>
+</html> 
